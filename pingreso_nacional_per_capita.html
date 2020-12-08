@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="f5cda0a0-a268-4067-811a-35b91f308caf" data-root-id="1287"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1588">
+          {"491358ab-4c67-4547-b5c5-f2cbf23bc509":{"roots":{"references":[{"attributes":{"below":[{"id":"1298"}],"center":[{"id":"1301"},{"id":"1305"},{"id":"1334"}],"left":[{"id":"1302"}],"plot_height":400,"plot_width":800,"renderers":[{"id":"1324"},{"id":"1339"},{"id":"1344"},{"id":"1358"}],"title":{"id":"1288"},"toolbar":{"id":"1313"},"x_range":{"id":"1290"},"x_scale":{"id":"1294"},"y_range":{"id":"1292"},"y_scale":{"id":"1296"}},"id":"1287","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1294","type":"LinearScale"},{"attributes":{"data_source":{"id":"1320"},"glyph":{"id":"1322"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1323"},"selection_glyph":null,"view":{"id":"1325"}},"id":"1324","type":"GlyphRenderer"},{"attributes":{"align":"center","text":"Ingreso nacional neto per capita","text_font":"arial","text_font_size":{"value":"14pt"}},"id":"1288","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1306"},{"id":"1307"},{"id":"1308"},{"id":"1309"},{"id":"1310"},{"id":"1311"},{"id":"1360"}]},"id":"1313","type":"Toolbar"},{"attributes":{"label":{"value":"Argentina"},"renderers":[{"id":"1324"}]},"id":"1335","type":"LegendItem"},{"attributes":{},"id":"1290","type":"DataRange1d"},{"attributes":{"items":[{"id":"1335"},{"id":"1354"}],"location":"bottom_right"},"id":"1334","type":"Legend"},{"attributes":{},"id":"1306","type":"PanTool"},{"attributes":{"callback":null,"tooltips":[["Argentina","@Argentina{,}"],["Uruguay","@Uruguay{,}"],["datos.bancomundial.org","12/2020"]]},"id":"1360","type":"HoverTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1312","type":"BoxAnnotation"},{"attributes":{},"id":"1310","type":"ResetTool"},{"attributes":{"source":{"id":"1320"}},"id":"1359","type":"CDSView"},{"attributes":{},"id":"1307","type":"WheelZoomTool"},{"attributes":{"source":{"id":"1320"}},"id":"1345","type":"CDSView"},{"attributes":{"overlay":{"id":"1312"}},"id":"1308","type":"BoxZoomTool"},{"attributes":{},"id":"1292","type":"DataRange1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"white"},"line_alpha":{"value":0.1},"line_color":{"value":"red"},"size":{"units":"screen","value":8},"x":{"field":"Year"},"y":{"field":"Uruguay"}},"id":"1357","type":"Circle"},{"attributes":{},"id":"1309","type":"SaveTool"},{"attributes":{"data_source":{"id":"1320"},"glyph":{"id":"1356"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1357"},"selection_glyph":null,"view":{"id":"1359"}},"id":"1358","type":"GlyphRenderer"},{"attributes":{},"id":"1296","type":"LinearScale"},{"attributes":{"source":{"id":"1320"}},"id":"1340","type":"CDSView"},{"attributes":{"data":{"Argentina":{"__ndarray__":"iTsFke9brUAeM1exUM65QNGNv45hZsVAdpoSf/29xUBvideDw7nFQFXbZCD/YMRA7EeEmLkWx0BqgwzoP0bFQIo3dF4kHMhA4eCfwOHPwkA=","dtype":"float64","order":"little","shape":[10]},"Uruguay":{"__ndarray__":"BzmiZPM3pkAn0kObDuu5QIymjML8KMlApRcjDkl9yUA2LVjEie/MQJ0ClJTTHMxAdF9OHosiykCUWu6Lx3fJQAEqTU+4QcxAz716fWqTy0A=","dtype":"float64","order":"little","shape":[10]},"Year":[1990,2000,2011,2012,2013,2014,2015,2016,2017,2018],"index":[0,1,2,3,4,5,6,7,8,9]},"selected":{"id":"1331"},"selection_policy":{"id":"1332"}},"id":"1320","type":"ColumnDataSource"},{"attributes":{},"id":"1299","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"white"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":8},"x":{"field":"Year"},"y":{"field":"Argentina"}},"id":"1338","type":"Circle"},{"attributes":{"fill_color":{"value":"white"},"line_color":{"value":"red"},"size":{"units":"screen","value":8},"x":{"field":"Year"},"y":{"field":"Uruguay"}},"id":"1356","type":"Circle"},{"attributes":{},"id":"1311","type":"HelpTool"},{"attributes":{},"id":"1332","type":"UnionRenderers"},{"attributes":{"axis_label":"Year","formatter":{"id":"1330"},"ticker":{"id":"1299"}},"id":"1298","type":"LinearAxis"},{"attributes":{"data_source":{"id":"1320"},"glyph":{"id":"1337"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1338"},"selection_glyph":null,"view":{"id":"1340"}},"id":"1339","type":"GlyphRenderer"},{"attributes":{},"id":"1303","type":"BasicTicker"},{"attributes":{"axis":{"id":"1298"},"ticker":null},"id":"1301","type":"Grid"},{"attributes":{"fill_color":{"value":"white"},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":8},"x":{"field":"Year"},"y":{"field":"Argentina"}},"id":"1337","type":"Circle"},{"attributes":{"line_color":"#1f77b4","line_width":2,"x":{"field":"Year"},"y":{"field":"Argentina"}},"id":"1322","type":"Line"},{"attributes":{"data_source":{"id":"1320"},"glyph":{"id":"1342"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1343"},"selection_glyph":null,"view":{"id":"1345"}},"id":"1344","type":"GlyphRenderer"},{"attributes":{"axis_label":"U$D","formatter":{"id":"1328"},"ticker":{"id":"1303"}},"id":"1302","type":"LinearAxis"},{"attributes":{"axis":{"id":"1302"},"dimension":1,"ticker":null},"id":"1305","type":"Grid"},{"attributes":{},"id":"1330","type":"BasicTickFormatter"},{"attributes":{"line_color":"red","line_width":2,"x":{"field":"Year"},"y":{"field":"Uruguay"}},"id":"1342","type":"Line"},{"attributes":{"line_alpha":0.1,"line_color":"red","line_width":2,"x":{"field":"Year"},"y":{"field":"Uruguay"}},"id":"1343","type":"Line"},{"attributes":{},"id":"1328","type":"BasicTickFormatter"},{"attributes":{"label":{"value":"Uruguay"},"renderers":[{"id":"1344"}]},"id":"1354","type":"LegendItem"},{"attributes":{},"id":"1331","type":"Selection"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":2,"x":{"field":"Year"},"y":{"field":"Argentina"}},"id":"1323","type":"Line"},{"attributes":{"source":{"id":"1320"}},"id":"1325","type":"CDSView"}],"root_ids":["1287"]},"title":"Bokeh Application","version":"2.2.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1588').textContent;
+                  var render_items = [{"docid":"491358ab-4c67-4547-b5c5-f2cbf23bc509","root_ids":["1287"],"roots":{"1287":"f5cda0a0-a268-4067-811a-35b91f308caf"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

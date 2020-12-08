@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_47165b8b082b4b458be3660239eaee96 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+             <h3 align="center" style="font-size:16px"><b>Los 8 municipios de Montevideo and cluster</b></h3>
+             
+    
+            <div class="folium-map" id="map_47165b8b082b4b458be3660239eaee96" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_47165b8b082b4b458be3660239eaee96 = L.map(
+                                  'map_47165b8b082b4b458be3660239eaee96',
+                                  {center: [-34.8833,-56.1667],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_b1bec4ecb0c54c5ea41584a855fc1474 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+        
+    
+            var circle_marker_c7ce12033a0a405aa5440e319c2e1db7 = L.circleMarker(
+                [-34.8833,-56.1667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+            
+    
+            var popup_d143fdcd59af4cb8a4019f720e005e4e = L.popup({maxWidth: '300'});
+
+            
+                var html_14ce0f32d6db4e91a9163eac6f7eb497 = $('<div id="html_14ce0f32d6db4e91a9163eac6f7eb497" style="width: 100.0%; height: 100.0%;">Montevideo</div>')[0];
+                popup_d143fdcd59af4cb8a4019f720e005e4e.setContent(html_14ce0f32d6db4e91a9163eac6f7eb497);
+            
+
+            circle_marker_c7ce12033a0a405aa5440e319c2e1db7.bindPopup(popup_d143fdcd59af4cb8a4019f720e005e4e);
+
+            
+        
+    
+
+            var circle_5647b0850c0644a08d83f96c136e0768 = L.circle(
+                [-34.86631,-56.23627],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#8000ff",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1000,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+            
+    
+            var popup_7af59041f0224d91a39ba26ae40697f6 = L.popup({maxWidth: '300'});
+
+            
+                var html_d132dd551e704b938513a7c1e3d54944 = $('<div id="html_d132dd551e704b938513a7c1e3d54944" style="width: 100.0%; height: 100.0%;">Name:Municipio A - Cluster:1</div>')[0];
+                popup_7af59041f0224d91a39ba26ae40697f6.setContent(html_d132dd551e704b938513a7c1e3d54944);
+            
+
+            circle_5647b0850c0644a08d83f96c136e0768.bindPopup(popup_7af59041f0224d91a39ba26ae40697f6);
+
+            
+        
+    
+
+            var circle_917e7551f1844c5aa169e16edcbed00e = L.circle(
+                [-34.89722,-56.17121],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1000,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+            
+    
+            var popup_f0f70682ee0041c99a3c70fd460552fa = L.popup({maxWidth: '300'});
+
+            
+                var html_235803ca3c0044bd8e9cd55abe95f214 = $('<div id="html_235803ca3c0044bd8e9cd55abe95f214" style="width: 100.0%; height: 100.0%;">Name:Municipio B - Cluster:0</div>')[0];
+                popup_f0f70682ee0041c99a3c70fd460552fa.setContent(html_235803ca3c0044bd8e9cd55abe95f214);
+            
+
+            circle_917e7551f1844c5aa169e16edcbed00e.bindPopup(popup_f0f70682ee0041c99a3c70fd460552fa);
+
+            
+        
+    
+
+            var circle_da2f63ea15de4c7f9f581b11da697ae7 = L.circle(
+                [-34.85758,-56.19821],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1000,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+            
+    
+            var popup_a1f079f7bcad47928803219f24099013 = L.popup({maxWidth: '300'});
+
+            
+                var html_3f5118597e664b11a23019ba2590c0a8 = $('<div id="html_3f5118597e664b11a23019ba2590c0a8" style="width: 100.0%; height: 100.0%;">Name:Municipio C - Cluster:0</div>')[0];
+                popup_a1f079f7bcad47928803219f24099013.setContent(html_3f5118597e664b11a23019ba2590c0a8);
+            
+
+            circle_da2f63ea15de4c7f9f581b11da697ae7.bindPopup(popup_a1f079f7bcad47928803219f24099013);
+
+            
+        
+    
+
+            var circle_2b3eb6c6ae8d41a3bc2c384e41d233c2 = L.circle(
+                [-34.90042,-56.15713],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1000,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+            
+    
+            var popup_093268d3dafe49bfb46855779104f9c5 = L.popup({maxWidth: '300'});
+
+            
+                var html_4bdabbdc5e434294953a22e8ac87277d = $('<div id="html_4bdabbdc5e434294953a22e8ac87277d" style="width: 100.0%; height: 100.0%;">Name:Municipio CH - Cluster:0</div>')[0];
+                popup_093268d3dafe49bfb46855779104f9c5.setContent(html_4bdabbdc5e434294953a22e8ac87277d);
+            
+
+            circle_2b3eb6c6ae8d41a3bc2c384e41d233c2.bindPopup(popup_093268d3dafe49bfb46855779104f9c5);
+
+            
+        
+    
+
+            var circle_a75ff49294ac47549a6baf282cdd727f = L.circle(
+                [-34.84551,-56.15445],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1000,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+            
+    
+            var popup_e4698e222d034730bb609b240f23ee6f = L.popup({maxWidth: '300'});
+
+            
+                var html_119d86915a274ede8f7131fa5a6b7379 = $('<div id="html_119d86915a274ede8f7131fa5a6b7379" style="width: 100.0%; height: 100.0%;">Name:Municipio D - Cluster:0</div>')[0];
+                popup_e4698e222d034730bb609b240f23ee6f.setContent(html_119d86915a274ede8f7131fa5a6b7379);
+            
+
+            circle_a75ff49294ac47549a6baf282cdd727f.bindPopup(popup_e4698e222d034730bb609b240f23ee6f);
+
+            
+        
+    
+
+            var circle_850861673f5040cc992e600415949104 = L.circle(
+                [-34.8778219671739,-56.0878094659586],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1000,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+            
+    
+            var popup_b4156d0bd9e24ca2a44c9103a542fd66 = L.popup({maxWidth: '300'});
+
+            
+                var html_739cce7b05e04e3a88f1ccdf63340069 = $('<div id="html_739cce7b05e04e3a88f1ccdf63340069" style="width: 100.0%; height: 100.0%;">Name:Municipio E - Cluster:0</div>')[0];
+                popup_b4156d0bd9e24ca2a44c9103a542fd66.setContent(html_739cce7b05e04e3a88f1ccdf63340069);
+            
+
+            circle_850861673f5040cc992e600415949104.bindPopup(popup_b4156d0bd9e24ca2a44c9103a542fd66);
+
+            
+        
+    
+
+            var circle_49cb9d6b91ee404899a39a8aa3312221 = L.circle(
+                [-34.8586186712793,-56.1335908495142],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#80ffb4",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1000,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+            
+    
+            var popup_caf886af1c12468dbf8a2f7db826bd8a = L.popup({maxWidth: '300'});
+
+            
+                var html_8bdcf224646347d7ad2080b7fefb024a = $('<div id="html_8bdcf224646347d7ad2080b7fefb024a" style="width: 100.0%; height: 100.0%;">Name:Municipio F - Cluster:2</div>')[0];
+                popup_caf886af1c12468dbf8a2f7db826bd8a.setContent(html_8bdcf224646347d7ad2080b7fefb024a);
+            
+
+            circle_49cb9d6b91ee404899a39a8aa3312221.bindPopup(popup_caf886af1c12468dbf8a2f7db826bd8a);
+
+            
+        
+    
+
+            var circle_825db3c73e1b4564b15e21c262c335a3 = L.circle(
+                [-34.8501215527156,-56.2013550047804],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ff0000",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1000,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_47165b8b082b4b458be3660239eaee96);
+            
+    
+            var popup_353de8b947cd4b15a34651eb68704001 = L.popup({maxWidth: '300'});
+
+            
+                var html_25c8de16536649f1af1ac00e614ea6a0 = $('<div id="html_25c8de16536649f1af1ac00e614ea6a0" style="width: 100.0%; height: 100.0%;">Name:Municipio G - Cluster:0</div>')[0];
+                popup_353de8b947cd4b15a34651eb68704001.setContent(html_25c8de16536649f1af1ac00e614ea6a0);
+            
+
+            circle_825db3c73e1b4564b15e21c262c335a3.bindPopup(popup_353de8b947cd4b15a34651eb68704001);
+
+            
+        
+</script>
